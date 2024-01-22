@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Baloo2";
+  src: url("../src/assets/fonts/Baloo2-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../src/assets/fonts/Lato-Regular.woff2");
+}
+@font-face {
+  font-family: "Lato-Medium";
+  src: url("../src/assets/fonts/Lato-Medium.woff2");
+}
+@font-face {
+  font-family: "Lato-Semibold";
+  src: url("../src/assets/fonts/Lato-Semibold.woff2");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../src/assets/fonts/Lato-Bold.woff2");
+}
+
+@layer components {
+  .dot {
+    @apply before:content-[""] before:absolute before:bg-blue before:rounded-full before:p-1 before:w-[8px] before:h-[8px] before:-left-1 before:-top-1;
+  }
+  .HeroBlur{
+    @apply  w-44 h-40 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-sky-200/75 blur-3xl;
+  }
+}
+/* CALENDAR  */
+.rbc-calendar {
+  width: 70%;
+}
+
+/* MODAL rsuit  */
+.rs-modal-content {
+  border-radius:0 !important;
+  /* width: 600px; */
+  padding:0em;
+  }
+
+.bg-gradient-custom {
+  background: linear-gradient(120deg, rgba(166, 222, 247, 0.50) 8%, rgba(0,0,0, 0.09) 100%)
+}
+.box-shadow-custom{
+  box-shadow: 0px 2.9820661544799805px 2.385653018951416px 0px rgba(58, 60, 64, 0.02), 0px 7.166319847106934px 5.733055591583252px 0px rgba(58, 60, 64, 0.03), 0px 13.49354362487793px 10.794835090637207px 0px rgba(58, 60, 64, 0.04), 0px 24.07017707824707px 19.256141662597656px 0px rgba(58, 60, 64, 0.04), 0px 45.0206184387207px 36.01649475097656px 0px rgba(58, 60, 64, 0.05), 0px 107.7625503540039px 86.21003723144531px 0px rgba(58, 60, 64, 0.07)
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
